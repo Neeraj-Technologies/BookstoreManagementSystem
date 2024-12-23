@@ -40,4 +40,5 @@ private Author author;
 @JoinTable(name = "book_category", joinColumns = @JoinColumn(name="book_id"), 
 inverseJoinColumns = @JoinColumn(name="category_id"))
 private Set<Category> categories = new HashSet<>();
+
 }
