@@ -10,12 +10,12 @@ import lombok.Data;
 
 @Data
 public class BookDTO {
-    private String title;
-    private String authorName;
+    private String title  ;
+    private String authorName  ;
     private List<String> categoryNames;
 
     public BookDTO(Book book) {
-        this.title = book.getTitle();
+        this.title = book.getTitle() ;
         this.authorName = book.getAuthor().getName();
         this.categoryNames = book.getCategories().stream()
                                  .map(Category::getName)
